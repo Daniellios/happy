@@ -11,15 +11,54 @@
   fill: none;
 }
 
-@keyframes drawgreen {
+/* GREEN CIRCLE */
+@-webkit-keyframes drawgreen {
   0% {
+    stroke: var(--green);
     stroke-dasharray: 0 690;
     stroke-dashoffset: 135;
+    stroke-width: 8;
   }
 
   100% {
+    stroke: var(--green);
     stroke-dasharray: 440 250;
     stroke-dashoffset: 135;
+    stroke-width: 8;
+  }
+}
+
+@keyframes drawgreen {
+  0% {
+    stroke: var(--green);
+    stroke-dasharray: 0 690;
+    stroke-dashoffset: 135;
+    stroke-width: 8;
+  }
+
+  100% {
+    stroke: var(--green);
+    stroke-dasharray: 440 250;
+    stroke-dashoffset: 135;
+    stroke-width: 8;
+  }
+}
+
+/* YELLOW CIRCLE */
+
+@-webkit-keyframes drawyellow {
+  0% {
+    stroke-dasharray: 0 690;
+    stroke-dashoffset: 135;
+    stroke-width: 10;
+    stroke: var(--yellow);
+  }
+
+  100% {
+    stroke-dasharray: 220 470;
+    stroke-dashoffset: 135;
+    stroke-width: 10;
+    stroke: var(--yellow);
   }
 }
 
@@ -27,34 +66,44 @@
   0% {
     stroke-dasharray: 0 690;
     stroke-dashoffset: 135;
+    stroke-width: 10;
+    stroke: var(--yellow);
   }
 
   100% {
     stroke-dasharray: 220 470;
     stroke-dashoffset: 135;
+    stroke-width: 10;
+    stroke: var(--yellow);
   }
 }
 
 .green-circle {
+  -webkit-animation-name: drawgreen;
   animation-name: drawgreen;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  animation-delay: 1s;
-  stroke: var(--green);
-  stroke-width: 8;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  stroke: transparent;
   stroke-dasharray: 0 690;
   stroke-dashoffset: 135;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   stroke-linecap: round;
 }
 
 .yellow-circle {
+  -webkit-animation-name: drawyellow;
   animation-name: drawyellow;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  animation-delay: 2s;
-  stroke: var(--yellow);
-  stroke-width: 10;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  stroke: transparent;
   stroke-dasharray: 0 690;
   stroke-dashoffset: 135;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   stroke-linecap: round;
 }
