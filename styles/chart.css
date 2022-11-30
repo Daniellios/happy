@@ -11,6 +11,32 @@
   fill: none;
 }
 
+/* GREY CIRCLE */
+
+@-webkit-keyframes drawgrey {
+  0% {
+    stroke-dasharray: 0 690;
+    stroke-dashoffset: 135;
+    stroke: #f3f3f3;
+  }
+  100% {
+    stroke-dasharray: 620 70;
+    stroke-dashoffset: 135;
+    stroke: #d7d7d78f;
+  }
+}
+@keyframes drawgrey {
+  0% {
+    stroke: #f3f3f3;
+    stroke-dasharray: 0 690;
+    stroke-dashoffset: 135;
+  }
+  100% {
+    stroke-dasharray: 620 70;
+    stroke-dashoffset: 135;
+    stroke: #d7d7d78f;
+  }
+}
 /* GREEN CIRCLE */
 @-webkit-keyframes drawgreen {
   0% {
@@ -76,6 +102,20 @@
     stroke-width: 10;
     stroke: var(--yellow);
   }
+}
+
+.grey-circle {
+  -webkit-animation-name: drawgrey;
+  animation-name: drawgrey;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  stroke: #d7d7d78f;
+  stroke-width: 6;
+  stroke-dasharray: 620 70;
+  stroke-dashoffset: 135;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  stroke-linecap: round;
 }
 
 .green-circle {

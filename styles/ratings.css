@@ -3,7 +3,12 @@
   margin-left: auto;
   color: var(--dark-grey);
   font-size: 0.75rem;
+  border-spacing: 10px;
   background-color: white;
+}
+
+.ratings td:not(.ratings__graph) {
+  border: none;
 }
 
 .ratings__title {
@@ -33,8 +38,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid transparent;
+  border: 1px solid #e7e7e7ea;
   border-radius: 3px;
+  background-color: #f9f9f9;
   width: 90px;
   padding-right: 5px;
 }
