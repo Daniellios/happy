@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <title>HAPPY-INC</title>
+    <title>HAPPY | Daniil Blinnikov</title>
   </head>
   <body>
     <main>
@@ -13,7 +13,6 @@
         <div class="diagram">
           <div class="chart">
             <svg width="230" height="230" viewBox="0 0 230 230">
-              <circle class="grey-circle" r="110" cx="50%" cy="50%"></circle>
               <circle class="green-circle" r="110" cx="50%" cy="50%"></circle>
               <circle class="yellow-circle" r="110" cx="50%" cy="50%"></circle>
             </svg>
@@ -31,12 +30,12 @@
           </p>
           <div class="diagram__diff"><span>3.1</span></div>
         </div>
-        <table class="diagram__stats stats" cellspacing="10">
-          <tr class="stats__row">
-            <td class="stats__title">Промоутеры</td>
-            <td class="stats__numbers">
-              <p class="stats__percent">32.0%</p>
-              <div class="stats__people">
+        <table class="ratings" cellspacing="10">
+          <tr >
+            <td class="ratings__title">Промоутеры</td>
+            <td class="ratings__numbers">
+              <p class="ratings__percent">32.0%</p>
+              <div class="ratings__people">
                 <span>81</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,19 +48,19 @@
                 </svg>
               </div>
             </td>
-            <td class="stats__graph">
-              <div class="stats__color stats__color--green">
+            <td class="ratings__graph">
+              <div class="ratings__type ratings__promo">
                 <div class="bright"></div>
                 <div class="light"></div>
               </div>
-              <div class="stats__diff">+1.2%</div>
+              <div class="ratings__diff">+1.2%</div>
             </td>
           </tr>
-          <tr class="stats__row">
-            <td class="stats__title">Скептики</td>
-            <td class="stats__numbers">
-              <p class="stats__percent">39.1%</p>
-              <div class="stats__people">
+          <tr >
+            <td class="ratings__title">Скептики</td>
+            <td class="ratings__numbers">
+              <p class="ratings__percent">39.1%</p>
+              <div class="ratings__people">
                 <span>8</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,19 +73,19 @@
                 </svg>
               </div>
             </td>
-            <td class="stats__graph">
-              <div class="stats__color stats__color--yellow">
+            <td class="ratings__graph">
+              <div class="ratings__type ratings__sceptic">
                 <div class="bright"></div>
                 <div class="light"></div>
               </div>
-              <div class="stats__diff">+4.8%</div>
+              <div class="ratings__diff">+4.8%</div>
             </td>
           </tr>
-          <tr class="stats__row">
-            <td class="stats__title">Критики</td>
-            <td class="stats__numbers">
-              <p class="stats__percent">79.8%</p>
-              <div class="stats__people">
+          <tr >
+            <td class="ratings__title">Критики</td>
+            <td class="ratings__numbers">
+              <p class="ratings__percent">79.8%</p>
+              <div class="ratings__people">
                 <span>7</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,12 +98,12 @@
                 </svg>
               </div>
             </td>
-            <td class="stats__graph">
-              <div class="stats__color stats__color--red">
+            <td class="ratings__graph">
+              <div class="ratings__type ratings__critic">
                 <div class="bright"></div>
                 <div class="light"></div>
               </div>
-              <div class="stats__diff">-9.7%</div>
+              <div class="ratings__diff">-9.7%</div>
             </td>
           </tr>
         </table>

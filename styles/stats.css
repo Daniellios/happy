@@ -1,93 +1,92 @@
-/* STATT --------------------------------------------- */
-
-.stats {
+.ratings {
+  width: 226px;
+  margin-left: auto;
   color: var(--dark-grey);
   font-size: 0.75rem;
   background-color: white;
 }
 
-.stats__title {
+.ratings__title {
   font-weight: bold;
   vertical-align: top;
 }
 
-.stats__numbers {
+.ratings__numbers {
   text-align: right;
 }
 
-.stats__percent {
+.ratings__percent {
   font-weight: bold;
 }
 
-.stats__people svg {
+.ratings__people svg {
   fill: var(--light-grey);
   width: 11px;
   height: 11px;
 }
 
-.stats__people span {
+.ratings__people span {
   color: var(--light-grey);
 }
 
-.stats__graph {
+.ratings__graph {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid transparent;
   border-radius: 3px;
-  background-color: #f9f9f9;
   width: 90px;
   padding-right: 5px;
 }
 
-.stats__color {
+.ratings__type {
   display: flex;
   flex-direction: column;
 }
 
-.stats__color > div.bright {
+.ratings__type > div.bright {
   height: 26px;
   border-top-left-radius: 3px;
 }
 
-.stats__color > div.light {
+.ratings__type > div.light {
   height: 10px;
   opacity: 0.5;
   border-bottom-left-radius: 3px;
 }
 
-.stats__color--green > * {
+.ratings__promo > * {
   background-color: var(--green);
 }
 
-.stats__color--green .bright {
+.ratings__promo .bright {
   width: 31px;
 }
 
-.stats__color--green .light {
+.ratings__promo .light {
   width: 29px;
 }
 
-.stats__color--yellow > * {
+.ratings__sceptic > * {
   background-color: var(--yellow);
 }
 
-.stats__color--yellow .bright {
+.ratings__sceptic .bright {
   width: 33px;
 }
 
-.stats__color--yellow .light {
+.ratings__sceptic .light {
   width: 27px;
 }
 
-.stats__color--red > * {
+.ratings__critic > * {
   background-color: var(--red);
 }
 
-.stats__color--red .bright {
+.ratings__critic .bright {
   width: 25px;
 }
 
-.stats__color--red .light {
+.ratings__critic .light {
   width: 30px;
 }

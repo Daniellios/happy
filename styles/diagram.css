@@ -87,11 +87,6 @@
   border-bottom-color: var(--green);
 }
 
-.diagram__stats {
-  width: 226px;
-  margin-left: auto;
-}
-
 .diagram__sideline {
   position: absolute;
   width: 30px;
@@ -121,7 +116,7 @@
   content: "+";
   display: block;
   color: var(--light-grey);
-  left: -5px;
+  left: -5.2px;
   bottom: 5px;
   background-color: white;
 }

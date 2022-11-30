@@ -1,15 +1,14 @@
 /* ------ CHART DRAW ---------- */
 
-@keyframes drawgrey {
-  0% {
-    stroke-dasharray: 0 690;
-    stroke-dashoffset: 135;
-  }
+.chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  100% {
-    stroke-dasharray: 620 70;
-    stroke-dashoffset: 135;
-  }
+.chart svg {
+  fill: none;
 }
 
 @keyframes drawgreen {
@@ -34,28 +33,6 @@
     stroke-dasharray: 220 470;
     stroke-dashoffset: 135;
   }
-}
-
-.chart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.chart svg {
-  fill: none;
-}
-
-.grey-circle {
-  animation-name: drawgrey;
-  animation-duration: 2s;
-  stroke: #d7d7d79e;
-  stroke-width: 6;
-  stroke-dasharray: 620 70;
-  stroke-dashoffset: 135;
-  animation-fill-mode: forwards;
-  stroke-linecap: round;
 }
 
 .green-circle {
