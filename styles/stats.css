@@ -6,10 +6,6 @@
   background-color: white;
 }
 
-.stats td:not(.stats__graph) {
-  border: none;
-}
-
 .stats__title {
   font-weight: bold;
   vertical-align: top;
