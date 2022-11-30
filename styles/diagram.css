@@ -60,7 +60,7 @@
 
 .diagram__desc {
   font-size: 0.688rem;
-  line-height: 13px;
+  line-height: 0.813rem;
   color: var(--light-grey);
   margin-bottom: 10px;
 }
@@ -110,7 +110,7 @@
   display: block;
   bottom: 43px;
   left: 0;
-  width: 13px;
+  width: 12px;
   height: 10px;
   border-top: 1px solid var(--light-grey);
 }
