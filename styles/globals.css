@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("./../assets/fonts/GothamPro-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/GothamPro-Bold.woff") format("woff"),
+    url("../../assets/fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("../../assets/fonts/GothamPro.woff2") format("woff2"),
+    url("../../assets/fonts/GothamPro.woff") format("woff"),
+    url("../../assets/fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --dark-grey: #555555;
+  --light-grey: #a69b9f;
+  --yellow: #fbd229;
+  --green: #70a74b;
+  --red: #ed5243;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  height: 100vh;
+  font-family: "Arial", "Gotham Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.1875rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-end;
+  box-sizing: border-box;
+  width: 310px;
+  height: 470px;
+  margin: 20px auto;
+  padding: 45px 32px 5px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}

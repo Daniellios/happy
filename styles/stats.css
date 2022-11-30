@@ -1,0 +1,97 @@
+/* STATT --------------------------------------------- */
+
+.stats {
+  color: var(--dark-grey);
+  font-size: 0.75rem;
+  background-color: white;
+}
+
+.stats td:not(.stats__graph) {
+  border: none;
+}
+
+.stats__title {
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.stats__numbers {
+  text-align: right;
+}
+
+.stats__percents {
+  font-weight: bold;
+}
+
+.stats__people svg {
+  fill: var(--light-grey);
+  width: 11px;
+  height: 11px;
+}
+
+.stats__people span {
+  color: var(--light-grey);
+}
+
+.stats__graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  width: 90px;
+  padding-right: 5px;
+}
+
+.stats__color {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__color > div.bright {
+  height: 26px;
+  border-top-left-radius: 3px;
+}
+
+.stats__color > div.light {
+  height: 10px;
+  opacity: 0.5;
+  border-bottom-left-radius: 3px;
+}
+
+.stats__color--green > * {
+  background-color: var(--green);
+}
+
+.stats__color--green .bright {
+  width: 31px;
+}
+
+.stats__color--green .light {
+  width: 29px;
+}
+
+.stats__color--yellow > * {
+  background-color: var(--yellow);
+}
+
+.stats__color--yellow .bright {
+  width: 33px;
+}
+
+.stats__color--yellow .light {
+  width: 27px;
+}
+
+.stats__color--red > * {
+  background-color: var(--red);
+}
+
+.stats__color--red .bright {
+  width: 25px;
+}
+
+.stats__color--red .light {
+  width: 30px;
+}
