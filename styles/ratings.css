@@ -50,7 +50,7 @@
   flex-direction: column;
 }
 
-.ratings__type > div.bright {
+.ratings__type > div.dark {
   height: 26px;
   border-top-left-radius: 3px;
 }
@@ -65,7 +65,7 @@
   background-color: var(--green);
 }
 
-.ratings__promo .bright {
+.ratings__promo .dark {
   width: 31px;
 }
 
@@ -77,7 +77,7 @@
   background-color: var(--yellow);
 }
 
-.ratings__sceptic .bright {
+.ratings__sceptic .dark {
   width: 33px;
 }
 
@@ -89,7 +89,7 @@
   background-color: var(--red);
 }
 
-.ratings__critic .bright {
+.ratings__critic .dark {
   width: 25px;
 }
 
